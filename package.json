@@ -1,0 +1,49 @@
+{
+  "name": "nodejs-checkpoint",
+  "version": "1.0.0",
+  "description": "Node.js learning exercises covering basic concepts, file operations, HTTP server, password generation, and email sending",
+  "main": "hello-world.js",
+  "scripts": {
+    "start": "node hello-world.js",
+    "hello": "node hello-world.js",
+    "server": "node server.js",
+    "create-file": "node create-file.js",
+    "read-file": "node read-file.js",
+    "password": "node password-generator.js",
+    "email": "node email-sender.js",
+    "run-all": "node run-all.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "learning",
+    "exercises",
+    "http-server",
+    "file-system",
+    "password-generator",
+    "email",
+    "nodemailer"
+  ],
+  "author": "Your Name <lizkihara.academia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "generate-password": "^1.7.0",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/nodejs-checkpoint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/nodejs-checkpoint/issues"
+  },
+  "homepage": "https://github.com/yourusername/nodejs-checkpoint#readme"
+}
