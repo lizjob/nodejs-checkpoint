@@ -1,5 +1,6 @@
 // Import nodemailer
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 // Create transporter (using Gmail as example)
 // NOTE: For Gmail, you need to use App Passwords, not your regular password
@@ -7,16 +8,16 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransporter({
     service: 'gmail',
     auth: {
-        user: 'your-email@gmail.com',        
-        pass: 'your-app-password'           
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 });
 
 
 // Email options
 const mailOptions = {
-    from: 'your-email@gmail.com',           
-    to: 'recipient@example.com',            
+    from: process.env.EMAIL_USER,           
+    to: process.env.RECIPIENT_EMAIL,            
     subject: 'Test Email from Node.js',
     text: 'Hello! This is a test email sent using Node.js and Nodemailer.',
     html: `
